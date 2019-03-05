@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Programming Homework-register</title>
+<link rel="stylesheet" href="resources/register.css" type="text/css"></link>
+
+</head>
+<body>
+<header>Create Your Account</header>
+<form action="http://localhost:8080/join/MemberServlet?key=join" method="post">
+<table>
+<fieldset>
+	<legend>Personnel Information</legend>
+	<ul>
+		<li>YourName <input type="text" name="username" autofocus placeholder="Enter without spaces"></li>
+		<li>MobilePhone <input type="number" name="tel" placeholder="***.****.****"></li>
+		<li>Email <input type="email" name="email" placeholder="****@****.***"></li>
+		<li>Gender <label for="man">male</label>
+			<input type="radio" name="gender" value="man">
+			<label for="woman">female</label>
+			<input type="radio" checked name="gender" value="woman"></li>
+		<li>Height <input type="number" name="height" min="150" max="200" value="175"></li>
+	</ul>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Hobby</legend>
+	<ul>
+		<li>Your Best Gift <select name="gift">
+			<option value="LG GRAN">LG GRAN</option>
+			<option value="SAMSUNG PC">SAMSUNG</option>
+			<option vlaue="IPHONE 8" selected>IPHONE X</option>
+			<option value="SONY AUDIO">SONY AUDIO</option>
+		</select>
+		</li>
+		<li>Your favorite fruit <select name="fruit">
+			<option value="apple">LG apple</option>
+			<option value="grape">grape</option>
+			<option vlaue="orange" selected>orange</option>
+			<option value="mango">mango</option>
+		</select>
+		</li>
+	</ul>
+</fieldset>
+<br>
+<fieldset>
+	<legend>General Comments</legend>
+	<textarea name="want" rows="5" cols="50"></textarea>
+</fieldset>
+<br>
+
+<fieldset>
+	<div align="center">
+	<input type="submit" name="submit" value="SEND">
+	<input type="reset" name="reset" value="Create New">
+	</div>
+</fieldset>
+</table>
+</form>
+</body>
+</html>
